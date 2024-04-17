@@ -1,0 +1,28 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: cpp.exe build active file",
+			"command": "D:\\mingw64\\mingw64\\bin\\cpp.exe",
+			"presentation": { 
+            "panel": "new" //默认为“shared“表示共享，改成new之后每个进程创建新的端口
+            }
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"${file}",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: D:\\mingw64\\mingw64\\bin\\cpp.exe"
+		}
+	]
+}
